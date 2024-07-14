@@ -6,6 +6,11 @@ This repository contains the code to manage and display dish information, includ
 - A toggle button for changing the publish status of a particular dish.
 - Bonus: Real-time change in frontend when publish status is changed in backend.
 
+## Screenshots
+
+![Screenshot 2024-07-14 175053](https://github.com/user-attachments/assets/f61370f6-e173-4532-83ff-babd49e400cb)
+![Screenshot 2024-07-14 175122](https://github.com/user-attachments/assets/f50ea4cf-6b72-4009-85ac-a0e4d160150d)
+
 ## Requirements
 - Node.js
 - npm (Node Package Manager)
