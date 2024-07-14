@@ -26,7 +26,7 @@ Install the dependencies:
 ```bash
   npm install
 ```
-Running the Server
+## Running the Server
 
 Start the backend server:
 
@@ -34,28 +34,25 @@ Start the backend server:
   npm run dev
 ```
 
-The server will be running locally on http://localhost:3000.
+Start the react app:
+
+```bash
+  npm run dev
+```
+
+The backend server will be running locally on http://localhost:5000 and the react app will be locally on http://localhost:5173.
 
 ## Endpoints
-### 1. /ping
+### 1. /api/dishes
 - Method: GET
-- Description: This endpoint is used to check if the server is running.
-- Response: true
+- Description: This endpoint is used to return the list of all the dishes..
+- Response: List of dishes
   
-### 2. /submit
-- Method: POST
-- Description: This endpoint is used to save a new submission.
+### 2. /api/dishes/:id/togglePublish
+- Method: PUT
+- Description: This endpoint is used to toggle dish publishing status.
 - Parameters:
-    - name (string)
-    - email (string)
-    - phone (string)
-    - github_link (string)
-
-### 3. /read
-- Method: GET
-- Description: This endpoint is used to retrieve a submission by its index.
-- Query Parameter:
-    - index (number) - 0-based index of the submission to retrieve.
+    - id (Number)
 
 ## JSON Database
 The submissions are stored in a db.json file. The structure of the JSON file is as follows:
