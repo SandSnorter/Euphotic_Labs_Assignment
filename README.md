@@ -2,8 +2,9 @@
 This repository contains the code to manage and display dish information, including creating a database, API, and a front-end dashboard.. The backend is an Express server built with JavaScript and uses MongoDb as a database to store the data. The frontend is a React app.
 
 ## Features
-- /api/dishes: A GET request that return the list of all the dishes.
-- /api/dishes/:id/togglePublish: A PUT method to toggle dish publishing status.
+- List of dishes shown in the form of table.
+- A toggle button for changing the publish status of a particular dish.
+- Bonus: Real-time change in frontend when publish status is changed in backend.
 
 ## Requirements
 - Node.js
@@ -40,7 +41,7 @@ Start the react app:
   npm run dev
 ```
 
-The backend server will be running locally on http://localhost:5000 and the react app will be locally on http://localhost:5173.
+The backend server will be running locally on http://localhost:5000 and the react app will be running locally on http://localhost:5173.
 
 ## Endpoints
 ### 1. /api/dishes
@@ -53,6 +54,3 @@ The backend server will be running locally on http://localhost:5000 and the reac
 - Description: This endpoint is used to toggle dish publishing status.
 - Parameters:
     - id (Number)
-
-## JSON Database
-The submissions are stored in a db.json file. The structure of the JSON file is as follows:
